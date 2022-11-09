@@ -1,9 +1,9 @@
 :root {
-    --color-bg: #282828;
-    --color-fg: #EADBB2;
-    --color-link: #8F9191;
-    --color-link-visited: #668F8B;
-    --color-link-hover: #FA7921;
+    --color-bg: #232136;
+    --color-fg: #e0def4;
+    --color-link: #908caa;
+    --color-link-visited: #9ccfd8;
+    --color-link-hover: #ebbcba;
 }
 
 html,
@@ -44,7 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .head {
