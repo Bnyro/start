@@ -31,11 +31,11 @@ body {
 
 .info #date {
     text-transform: uppercase;
-    margin-bottom: -1rem;
+    margin-bottom: -0.8rem;
 }
 
 .info #greeting {
-    font-size: 3rem;
+    font-size: min(3rem, 9vh);
 }
 
 .container {
