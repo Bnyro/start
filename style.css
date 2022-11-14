@@ -24,14 +24,14 @@ body {
 }
 
 .info {
-    margin-left: 5rem;
-    margin-top: 5rem;
+    margin-left: 10vw;
+    margin-top: 8vh;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 0.7;
 }
 
 .info #date {
     text-transform: uppercase;
+    margin-bottom: -1rem;
 }
 
 .info #greeting {
@@ -44,26 +44,26 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 3rem;
+    flex-grow: 1;
 }
 
 .head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 40px;
-    padding-top: 60px;
+    font-size: 2.5rem;
 }
 
 .category {
     display: flex;
     flex-direction: column;
-    width: 180px;
+    width: 12rem;
 }
 
 .bookmarks {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .links {
