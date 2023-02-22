@@ -2,92 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Startpage</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="favicon.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Startpage</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="info">
-        <h4 id="date"></h4>
-        <h1 id="greeting"></h1>
+  <div class="info">
+    <h4 id="date"></h4>
+    <h1 id="greeting"></h1>
+  </div>
+  <div class="container">
+    <div class="head">
+      <p>> cd ~/<span class="blinking">_</span></p>
     </div>
-    <div class="container">
-        <div class="head">
-            <p>> cd ~/<span class="blinking">_</span></p>
+
+    <div class="bookmarks">
+      <div class="category">
+        <div class="links">
+          <li class="title">work</li>
+          <li><a href="https://s.bnyro.ga">findx</a></li>
+          <li><a href="https://tutanota.com">tutanota</a></li>
+          <li><a href="https://github.com/">github</a></li>
+          <li><a href="https://app.element.io">element</a></li>
         </div>
+      </div>
 
-        <div class="bookmarks">
-            <div class="category">
-                <div class="links">
-                    <li class="title">work</li>
-                    <li><a href="https://paulgo.io">searx</a></li>
-                    <li><a href="https://tutanota.com">tutanota</a></li>
-                    <li><a href="https://app.element.io">element</a></li>
-                    <li><a href="https://docs.helix-editor.com">helix</a></li>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="links">
-                    <li class="title">dev</li>
-                    <li><a href="https://github.com/">github</a></li>
-                    <li><a href="https://m3.material.io/">material</a></li>
-                    <li><a href="https://devdocs.io/">devdocs</a></li>
-                    <li><a href="https://learnxinyminutes.com/">learn</a></li>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="links">
-                    <li class="title">play</li>
-                    <li><a href="https://piped.kavin.rocks">piped</a></li>
-                    <li><a href="https://efy.piped.pages.dev/">piped dev</a></li>
-                    <li><a href="https://lingva.ml">lingva</a></li>
-                    <li><a href="https://css-tricks.com/">csstricks</a></li>
-                </div>
-            </div>
+      <div class="category">
+        <div class="links">
+          <li class="title">dev</li>
+          <li><a href="https://docs.helix-editor.com">helix</a></li>
+          <li><a href="https://m3.material.io/">material</a></li>
+          <li><a href="https://devdocs.io/">devdocs</a></li>
+          <li><a href="https://learnxinyminutes.com/">learn</a></li>
         </div>
+      </div>
+
+      <div class="category">
+        <div class="links">
+          <li class="title">play</li>
+          <li><a href="https://piped.kavin.rocks">piped</a></li>
+          <li><a href="https://efy.piped.pages.dev/">piped dev</a></li>
+          <li><a href="https://lingva.ml">lingva</a></li>
+          <li><a href="https://css-tricks.com/">csstricks</a></li>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
 
 <script>
-    let $ = document.querySelector.bind(document);
+  let $ = document.querySelector.bind(document);
 
-    function date() {
-        let currentDate = new Date();
-        let dateOptions = {
-            weekday: "long",
-            year: "numeric",
-            month: "long",
-            day: "numeric"
-        };
-        let date = currentDate.toLocaleDateString("en-GB", dateOptions);
-        $('#date').innerHTML = date;
-    }
+  function date() {
+    let currentDate = new Date();
+    let dateOptions = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    };
+    let date = currentDate.toLocaleDateString("en-GB", dateOptions);
+    $('#date').innerHTML = date;
+  }
 
-    function greet() {
-        let currentTime = new Date();
-        let greet = Math.floor(currentTime.getHours() / 6);
-        switch (greet) {
-            case 0:
-                $('#greeting').innerHTML = "Good night!";
-                break;
-            case 1:
-                $('#greeting').innerHTML = "Good morning!";
-                break;
-            case 2:
-                $('#greeting').innerHTML = "Good afternoon!";
-                break;
-            case 3:
-                $('#greeting').innerHTML = "Good evening!";
-                break;
-        }
+  function greet() {
+    let currentTime = new Date();
+    let greet = Math.floor(currentTime.getHours() / 6);
+    switch (greet) {
+      case 0:
+        $('#greeting').innerHTML = "Good night!";
+        break;
+      case 1:
+        $('#greeting').innerHTML = "Good morning!";
+        break;
+      case 2:
+        $('#greeting').innerHTML = "Good afternoon!";
+        break;
+      case 3:
+        $('#greeting').innerHTML = "Good evening!";
+        break;
     }
-    date();
-    greet();
+  }
+  date();
+  greet();
 </script>
